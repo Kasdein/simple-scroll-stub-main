@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(224, 255, 255);
+}
+
+h1 {
+    font-family: monospace;
+    font-weight: 100;
+    font-size: 2rem;
+    text-align: center;
+}
+
+header {
+    height: 600px;
+    line-height: 600px;
+    border: #f0a038 1.5px solid;
+}
+
+#container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scrollElement {
+    height: 600px;
+    line-height: 600px;
+}
+
+#content1 {
+    background-color: cornflowerblue;
+}
+
+#content2 {
+    background-color: blueviolet;
+}
+
+#content3 {
+    background-color: crimson;
+}
+
+#content4 {
+    background-color: springgreen;
+}
+
+#content5 {
+    background-color: cornflowerblue;
+}
+
+#content6 {
+    background-color: blueviolet;
+}
+
+#content7 {
+    background-color: crimson;
+}
+
+#content8 {
+    background-color: springgreen;
+}
+
+.jsScroll {
+    opacity: 0;
+}
+
+.scrolled.fadeIn {
+    animation: fadeIn 1s ease-in-out both;
+}
+
+.scrolled.slideInLeft {
+    animation: slideInLeft 1s ease-in-out both;
+}
+
+.scrolled.slideInRight {
+    animation: slideInRight 1s ease-in-out both;
+}
+
+.scrolled.slideBottom {
+    animation: slideInBottom 1s ease-in-out both;
+}
+
+.scrolled.spinIn {
+    animation: spinIn 1s ease-in-out both;
+}
+
+.scrolled.spiralIn {
+    animation: spiralIn 3s both;
+}
+
+/* keyframe animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes spinIn {
+    0% {
+        rotate: calc(180deg);
+        opacity: 0;
+    }
+
+    100% {
+        rotate: 0;
+        opacity: 1;
+    }
+}
